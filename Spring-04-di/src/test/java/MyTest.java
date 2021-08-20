@@ -32,7 +32,10 @@ public class MyTest
     public void test2()
     {
         ApplicationContext context = new ClassPathXmlApplicationContext("userbeans.xml");
-        User               user    = context.getBean("user2", User.class);
-        System.out.println(user);
+        //getBean()第二个参数填写对象的类就可以通过反射获取对象了,不用强转了
+        //User user1 = (User) context.getBean("user");
+        User user  = context.getBean("user2", User.class);
+        User user2 = context.getBean("user2", User.class);
+        System.out.println(user == user2);
     }
 }

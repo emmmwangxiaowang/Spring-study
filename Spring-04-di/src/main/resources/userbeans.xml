@@ -13,7 +13,11 @@
     <bean id="user" class="com.wang.pojo.User" p:age="18" p:name="王小王"/>
 
 
-    <!--c明明空间注入,通过构造器注入: construct-args-->
-    <bean id="user2" class="com.wang.pojo.User" c:age="18" c:name="王小王"/>
+    <!--c明明空间注入,通过构造器注入: construct-args                         模式     -->、
+    <!--scope
+        单例模式： singleton
+        原型模式:  prototype get一个对象就创建一个实例
+    -->
+    <bean id="user2" class="com.wang.pojo.User" c:age="18" c:name="王小王" scope="prototype"/>
 
 </beans>
