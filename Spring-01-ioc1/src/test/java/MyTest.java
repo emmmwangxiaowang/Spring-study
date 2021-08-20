@@ -1,6 +1,6 @@
-import com.wang.dao.UserDaoMysqlImpl;
-import com.wang.service.UserService;
 import com.wang.service.UserServiceImpl;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * @Author: 王航
@@ -20,11 +20,21 @@ import com.wang.service.UserServiceImpl;
  */
 public class MyTest
 {
-    public static void main(String[] args)
+    /*public static void main(String[] args)
     {
         //用户实际调的是业务层,dao层他们不需要接触
         UserService userService = new UserServiceImpl();
         ((UserServiceImpl) userService).setUserDao(new UserDaoMysqlImpl());
         userService.getUser();
+    }*/
+
+    public static void main(String[] args)
+    {
+        //获取applicationContext:拿到Spring容器
+        ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+
+        //需要什么就直接get
+        UserServiceImpl userServiceImpl = (UserServiceImpl) context.getBean("userServiceImpl");
+        userServiceImpl.getUser();
     }
 }
