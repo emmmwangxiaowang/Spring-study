@@ -19,4 +19,13 @@ public class MyTest
         user.show();
 
     }
+
+    /*
+    set方式注入
+    依赖注入:set注入
+    依赖:bean对象的创建依赖于容器
+    注入:bean对象中的所有属性,由容器来注入
+
+     */
+
 }
