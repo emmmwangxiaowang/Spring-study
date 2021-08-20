@@ -44,7 +44,7 @@
         class: bean对象所对应的权限定名:包名+类型名
         name: 也是别名,name更高级,可以同时取多个别名
     -->
-    <bean id="userT" class="com.wang.pojo.userT" name="uT1 uT2 uT3">
+    <bean id="userT" class="com.wang.pojo.userT" name="uT1 uT2 uT3 uT4">
         <property name="name" value="王小王"/>
     </bean>
 </beans>

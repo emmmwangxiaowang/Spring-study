@@ -1,4 +1,4 @@
-import com.wang.pojo.user;
+import com.wang.pojo.userT;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -13,11 +13,10 @@ public class MyTest
     {
         //Spring容器,就类似于婚介网站
         //在配置文件加载的时候,容器中管理的对象就已经初始化了
-        ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
-        user               user    = (com.wang.pojo.user) context.getBean("user");
-        user               user1   = (com.wang.pojo.user) context.getBean("user");
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        userT              user    = (com.wang.pojo.userT) context.getBean("uT4");
+
         user.show();
-        System.out.println(user == user1);
 
     }
 }

@@ -31,4 +31,9 @@ public class userT
     {
         this.name = name;
     }
+
+    public void show()
+    {
+        System.out.println("name=" + name);
+    }
 }
