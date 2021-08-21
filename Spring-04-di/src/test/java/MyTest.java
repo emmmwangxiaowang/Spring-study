@@ -38,4 +38,5 @@ public class MyTest
         User user2 = context.getBean("user2", User.class);
         System.out.println(user == user2);
     }
+
 }
