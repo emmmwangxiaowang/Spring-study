@@ -29,3 +29,5 @@
 - service @Service
 - controller @Controller
 这四个注解功能都一样,都是代表将某个类注册到Spring中,装配bean
+###使用java的方式配置Spring
+JavaConfig是Spring的一个子项目,再Spring4之后,它成为了一个核心功能
