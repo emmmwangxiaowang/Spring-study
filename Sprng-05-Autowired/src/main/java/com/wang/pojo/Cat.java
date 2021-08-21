@@ -5,6 +5,7 @@ package com.wang.pojo;
  * @Email: 954544828@qq.com
  * @Date: 2021/8/21 0021
  */
+
 public class Cat
 {
     public void spark()

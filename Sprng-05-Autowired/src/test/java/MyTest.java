@@ -30,4 +30,10 @@ public class MyTest
         people.getCat().spark();
         people.getDog().spark();
     }
+
+    /*
+     * 使用注解步骤
+     * 1.导入约束
+     * 2.配置注解的支持
+     * */
 }
