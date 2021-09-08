@@ -9,11 +9,12 @@
     <!--p命名和c命名空间不能直接使用,需要导入xml约束-->
 
 
-    <!--p民命空间注入,可以直接注入属性的值:property-->
+    <!--p命名空间注入,可以直接注入属性的值:property-->
+    <!--p命名空间是通过set方法实现注入的-->
     <bean id="user" class="com.wang.pojo.User" p:age="18" p:name="王小王"/>
 
 
-    <!--c明明空间注入,通过构造器注入: construct-args                         模式     -->、
+    <!--c命名空间注入,通过构造器注入: construct-args                         模式     -->
     <!--scope
         单例模式： singleton
         原型模式:  prototype get一个对象就创建一个实例

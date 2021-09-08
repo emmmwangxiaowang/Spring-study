@@ -13,7 +13,8 @@ public class MyTest
     {
         ApplicationContext context     = new ClassPathXmlApplicationContext("applicationContext.xml");
         //动态代理的是接口
-        userService        userService = (com.wang.service.userService)context.getBean("userService");
+        //userService        userService = (com.wang.service.userService)context.getBean("userService");
+        userService userService = (com.wang.service.userService) context.getBean("userService");
         userService.add();
     }
 }

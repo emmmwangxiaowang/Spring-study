@@ -9,6 +9,8 @@
 
 
 >
+
+    <!--注解配置-->
     <context:annotation-config/>
     <bean id="cat1" class="com.wang.pojo.Cat"/>
     <bean id="cat2" class="com.wang.pojo.Cat"/>
@@ -16,7 +18,7 @@
     <bean id="dog2" class="com.wang.pojo.Dog"/>
     <!--
     byName:会自动在容器上下文中查找,和自己对象set方法后面的值对应的bean id
-    byName:会自动在容器上下文中查找,和自己对象属性类型相同的bean
+    byType:会自动在容器上下文中查找,和自己对象属性类型相同的bean
     byName的时候,需要保证所有bean的id唯一,并且这个bean需要和自动注入的属性的set方法的值一致
     byType的时候,需要保证所有bean的class唯一,并且这个bean需要和自动注入的属性的类型一致
     -->

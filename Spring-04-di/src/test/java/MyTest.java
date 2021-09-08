@@ -9,7 +9,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * @Email: 954544828@qq.com
  * @Date: 2021/8/20 0020
  */
-public class MyTest
+public class       MyTest
 {
     public static void main(String[] args)
     {
@@ -36,6 +36,7 @@ public class MyTest
         //User user1 = (User) context.getBean("user");
         User user  = context.getBean("user2", User.class);
         User user2 = context.getBean("user2", User.class);
+        System.out.println(user);
         System.out.println(user == user2);
     }
 
