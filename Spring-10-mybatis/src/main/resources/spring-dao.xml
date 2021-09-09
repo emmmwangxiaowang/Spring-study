@@ -15,6 +15,7 @@
     </bean>
 
     <!--sqlSessionFactory-->
+    <!--通过SqlSessionFactoryBean来创建sqlSessionFactory-->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="datasource"/>
         <!--绑定mybatis配置文件-->

@@ -16,6 +16,8 @@ public class MyTest
     public void test() throws IOException
     {
        /*
+        mybatis 原生运行流程
+
         //导入配置
         String resource="mybatis-config.xml";
         //读取文件
@@ -36,7 +38,8 @@ public class MyTest
 
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
-        userMapper userMapper = context.getBean("userMapper", userMapper.class);
+        //动态代理代理的是接口！
+        userMapper userMapper = context.getBean("userMapper2", userMapper.class);
 
         for (User user : userMapper.selectUser())
         {
