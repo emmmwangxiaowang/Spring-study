@@ -27,6 +27,7 @@ public class ProxyInvocationHandler implements InvocationHandler
 
     //生成得到代理类
     public Object getProxy(){
+        //newProxyInstance: 获取代理对象 有三个参数  类加载器    被代理的接口(传入的参数是实体类,向上查找找到接口类  InvocationHandler:处理器,调用其invoke方法(这个类继承了InvocationHandler,所以用this
        return Proxy.newProxyInstance(this.getClass().getClassLoader(),target.getClass().getInterfaces(),this);
     }
 

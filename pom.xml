@@ -19,6 +19,7 @@
         <module>Spring-08-proxy</module>
         <module>Spring-09-AOP</module>
         <module>Spring-10-mybatis</module>
+        <module>Spring-11-transaction</module>
     </modules>
 
 

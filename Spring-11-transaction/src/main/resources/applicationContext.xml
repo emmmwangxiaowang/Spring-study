@@ -6,11 +6,8 @@
 
     <import resource="spring-dao.xml"/>
 
-    <bean id="userMapper" class="com.wang.mapper.userMapperImpl">
-        <property name="sqlSession" ref="sqlSession"/>
-    </bean>
 
-    <bean id="userMapper2" class="com.wang.mapper.userMapperImpl2">
+    <bean id="userMapper" class="com.wang.mapper.userMapperImpl">
         <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
     </bean>
 </beans>

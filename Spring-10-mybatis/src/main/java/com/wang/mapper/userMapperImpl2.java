@@ -17,7 +17,6 @@ public class userMapperImpl2 extends SqlSessionDaoSupport implements userMapper
 //        SqlSession sqlSession = getSqlSession();
 //        userMapper mapper     = sqlSession.getMapper(userMapper.class);
 //        List <User> users     = mapper.selectUser();
-//        return users;
         return getSqlSession().getMapper(userMapper.class).selectUser();
     }
 }
